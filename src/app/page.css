@@ -1,0 +1,141 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+}
+
+h1 {
+  font-size: 3.125rem; /* Définit la taille du texte à 50px en rem (50/16 = 3.125 , 1rem = 16px par défaut) */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 35px;
+  background: transparent;
+  outline: none;
+  border-radius: 40px;
+  border: solid 1px white;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-family: "Orbitron", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+input:hover {
+  transform: scale(1.05);
+}
+
+input:focus-visible {
+  outline: 2px solid #d16ba5;
+  outline-offset: 3px;
+}
+
+button {
+  min-width: 80px; /* Empêche qu'il soit trop petit */
+  max-width: 100px; /* Évite qu'il devienne énorme */
+  width: 25%;
+  height: 35px;
+  color: rgb(255, 255, 255);
+  background: transparent;
+  outline: none;
+  border: solid 1px white;
+  border-radius: 40px;
+  cursor: pointer;
+  font-family: "Orbitron", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  color: rgb(0, 0, 0);
+  background-color: white;
+  transform: scale(1.05);
+}
+
+button:focus-visible {
+  outline: 2px solid #d16ba5;
+  outline-offset: 3px;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  background: rgba(0, 0, 0, 0.228);
+  backdrop-filter: blur(30px);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 500px;
+  padding: 1rem;
+}
+
+.result-encode-container,
+.result-decode-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: solid 1px rgb(255, 255, 255);
+  border-radius: 40px;
+  font-weight: 700;
+  width: 80%;
+  height: 35px;
+  margin-bottom: 1rem;
+}
+
+.encode,
+.decode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+#label-encode,
+#label-decode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
